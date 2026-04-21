@@ -1,24 +1,12 @@
 # GRAD521_KpirikaiDMP_2026
 
 Project description fo the great project. 
-1. Describe briefly the research questions that you are trying to answer with your research. 
 My research aims to elucidate the genetic basis of infection-driven metabolic changes. I use the fruit fly, Drosophila melanogaster and its natural parasites (parasitoid wasps) as model organisms. When flies are infected with wasps, there is a drastic increase in number of immune cells which dramatically reshapes how the flies process and store energy. We have evidence that some of the energy molecules such as fats (lipids) get diverted or “reprogrammed” from normal storage tissues and development to the immune cells for defense. 
 I am trying to answer: Which host genes control the reprogramming of lipid metabolism during infection? And how do specific lipid species change in abundance and spatial distribution within infected tissues? Given we share close to 75% similarity in disease causing genes with flies, understanding these questions and lipid metabolism will reveal conserved pathways that may inform treatments for metabolic disorders in humans.
 
-2. Describe the data that you will use to answer your research questions.
-Dataset 1. MALDI-MSI lipidomics data (experimental, instrument generated): a MALDI mass spectrometer scans fly tissue surface, and uses laser to ionize the lipids at specific locations (pixel coordinates) on the surface to generate a grid of mass spectra. Each pixel in the resulting image contains a full mass spectrum with the coordinate of where the laser hit; with that information I am able to map exactly where each lipid species is located within the tissue. The raw data are binary instrument files stored on the mass spec center's cloud. Since I have access to that and their analysis computer, I am able to generate and process the raw data into excel files for other analysis in R.
-Dataset 2. infection assays(experimental observational): I am able to genetically modify the fly genome and infect the flies with different wasps then record number of immune cells after a certain time period or survival counts daily. These data are recorded as spreadsheets (Excel/CSV) containing time-to-event data, mostly just counts. This dataset is critical for interpreting impact of metabolic changes in flies: does a genetic knockdown of a particular pathway change or correlate with better survival against the wasps? Sometimes, in doing the genetic modification, we attached fluorescent probes that lit green when the gene of interest is made, and with that, I collect dataset 3.
-Dataset 3. fluorescence spectrometry and microscopy data (experimental, instrument generated): I also use fluorescence microscopy to visualize immune cell recruitment and, in the future, will look at lipid droplet morphology of in infected versus uninfected flies. These data include numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
 
-Dataset 4. R analysis scripts and outputs (derived, codes and outputs): here, all raw data from datasets 1-3 are often imported into R for statistical analysis, visualization, and integration. I try to generate R Markdown notebooks that document every step: data cleaning, normalization, differential abundance testing for lipids, survival curve analysis and other correlation analyses relating to infection outcomes. The outputs include figures (PDF, PNG), summary tables (CSV), and model outputs. 
-
-3. For each dataset, describe how much data (approximately) will be created during the course of the project.
-•	Dataset 1 (MALDI-MSI): approximately 50 GB per run. A typical experiment includes 3 biological replicates per condition × 3-4 conditions × 2-3 time points = at least 24 runs, totaling ~1.2 TB of raw data. Processed data add another can be less if exported right. Some excel files I have are in kb size so they can be really small. Others are like 6 GB excel files so it can be really tricky depending on what is needed at any given time.
-•	Dataset 2 (infection assays): very small, less than 10 MB at any point in time. Immune cell numbers and survival counts data fit easily within a few Excel spreadsheets.
-•	Dataset 3 (fluorescence): spectrometry intensity data are small, like ~5 MB or so for each experiment. But high-resolution images can be larger: if I acquire 100 images at 5 MB each, that is ~500 MB. I have had images that are 30 MB. 
-•	Dataset 4 (R scripts and outputs): scripts are text-based, totaling less than 10 MB. Generated figures and reports may reach a few 100s MB depending on the number of high-resolution images saved.
-
-Total estimated data volume for the project: to be safe, I will probably say approximately 5 TB excluding the cloud data (those take extra ROM and also require higher RAM storage to even be able to open).
+## Goals 
+Goals of this project is to...
 
 
 <img width="468" height="623" alt="image" src="https://github.com/user-attachments/assets/7e63bf55-6eb9-4e73-85df-be4e3bfcd465" />
