@@ -8,5 +8,7 @@ I am trying to answer: Which host genes control the reprogramming of lipid metab
 ## Goals 
 Goals of this project is to...
 
+## Hypothesis
 
-<img width="468" height="623" alt="image" src="https://github.com/user-attachments/assets/7e63bf55-6eb9-4e73-85df-be4e3bfcd465" />
+The project hypothesizes that...
+
