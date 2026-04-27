@@ -26,7 +26,7 @@ Primary storage location	Backup location(s)
 2. MALDI-MSI processed,	OSU network drive (shared lab folder),	external hard drive and personal laptop
 3. Infection assays,	OSU network drive (Excel files), OSU box cloud, external hard drive and personal laptop
 4. Fluorescence images,	OSU network drive, external hard drive and personal laptop 	
-5. R scripts/outputs,	GitHub (private repository),	OSU Box cloud and local laptop
+5. R scripts/outputs,	GitHub (private repository),	OSU Box cloud and personal laptop
 
 ## Access and data sharing 
 Primarily through the OSU network drive with a personal folder with restricted access (only me and PI).
