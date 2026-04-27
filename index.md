@@ -4,7 +4,6 @@
 4. Fluorescence spectrometry and microscopy data (experimental, instrument generated: Numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
 5. R analysis scripts and outputs (derived, codes and outputs): R Markdown notebooks, including figures (PDF, PNG), summary tables (CSV), and model outputs. 
 
-
 ## Roles and responsibilities
 Role	Persons	Duties
 - Data collection / generation:	Grad student (me).	Running MALDI-MSI experiments, infection assays, fluorescence microscopy; recording raw data
@@ -18,9 +17,8 @@ Role	Persons	Duties
 - Access control:	PI + Grad student (me).	Managing permissions on shared drives; granting access to collaborators
 - Archiving and preservation:	PI + Grad student (me).	Depositing final data in institutional repository (ScholarsArchive@OSU) after publication
 
-
-
 ## Data standards and metadata
+All metadata of samples used are well document in lab notebooks and drive files. Work is done with flies so there is no sensitive information that requires special case scenarios. Quality control is handled as described in roles and responsibilities to ensure robust and replicatable results. 
 
 ## Storage and security
 Primary storage location	Backup location(s)
@@ -30,8 +28,10 @@ Primary storage location	Backup location(s)
 4. Fluorescence images,	OSU network drive + personal laptop +	external hard drive
 5. R scripts/outputs,	GitHub (private repository) + local laptop +	OSU Box cloud
 
-
 ## Access and data sharing 
+Primarily through the OSU network drive with a personal folder with restricted access (only me and PI).
+Mass spec center uses cloud: I have remote access credentials. The facility manager maintains the server, but I am responsible for downloading copies to my own storage regularly.
 
 ## Archiving and preservation 
-Archiving 
+Before graduating, I will transfer all data from my personal OSU network drive folder to the PI's lab folder. I will also deposit final datasets in ScholarsArchive@OSU with appropriate metadata and a DOI. My GitHub repositories will be transferred to a lab/PI account. Result publications out of the work will have raw data deposition requirements met as per the journal requirements.
+
