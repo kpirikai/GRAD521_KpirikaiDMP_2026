@@ -33,5 +33,5 @@ Primarily through the OSU network drive with a personal folder with restricted a
 Mass spec center uses cloud: I have remote access credentials. The facility manager maintains the server, but I am responsible for downloading copies to my own storage regularly.
 
 ## Archiving and preservation 
-Before graduating, I will transfer all data from my personal OSU network drive folder to the PI's lab folder. I will also deposit final datasets in ScholarsArchive@OSU with appropriate metadata and a DOI. My GitHub repositories will be transferred to a lab/PI account. Result publications out of the work will have raw data deposition requirements met as per the journal requirements.
+Before graduating, I will transfer all data from my personal OSU network drive folder to the PI's lab folder. I will also deposit final datasets in ScholarsArchive@OSU with appropriate metadata and a DOI. My GitHub repositories will be transferred to a lab/PI account. Resulting publications out of the work prior to graduation will have raw data deposition requirements met as per the journal requirements.
 
