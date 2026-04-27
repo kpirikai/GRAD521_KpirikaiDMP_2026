@@ -5,7 +5,7 @@ My research aims to elucidate the genetic basis of infection-driven metabolic ch
 I am trying to answer: Which host genes control the reprogramming of lipid metabolism during infection? And how do specific lipid species change in abundance and spatial distribution within infected tissues? Given we share close to 75% similarity in disease causing genes with flies, understanding these questions and lipid metabolism will reveal conserved pathways that may inform treatments for metabolic disorders in humans.
 
 ## Goals 
-in situ visualization of infection induced lipid reallocation 
+_In situ_ visualization of infection induced lipid reallocation 
 
 ## Hypothesis
 The project hypothesizes that infected flies reallocates lipids in order to fuel immune defense mechanism and that this reallocation is detectable via imaging techniques.
