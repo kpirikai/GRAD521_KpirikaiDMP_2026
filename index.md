@@ -1,4 +1,4 @@
-## Data description
+<img width="468" height="639" alt="image" src="https://github.com/user-attachments/assets/7e646159-348f-462d-9902-eb1f3500236b" />## Data description
 1. MALDI-MSI lipidomics data (experimental, instrument generated): Each pixel in the resulting image contains a full mass spectrum with the coordinate of where the laser hit; with that information I am able to map exactly where each lipid species is located within the tissue
 2. Infection assays(experimental observational): Excel/CSV containing time-to-event data, mostly just counts
 3. Fluorescence spectrometry and microscopy data (experimental, instrument generated: Numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
@@ -44,3 +44,51 @@ File naming: YYYYMMDD_assay_type_genotype_rep01.csv.
 - 3: Fluorescence spectrometry and microscopy data. Numerical intensity values will be exported to CSV and documented in the same README as Dataset 2. High-resolution images (TIFF, CZI) will be documented with a separate metadata CSV recording: image ID, sample ID, fluorophore (e.g., GFP, DAPI), exposure time, microscope settings, and a brief description of what the image shows. 
 File naming: YYYYMMDD_sample_fluorophore_rep01.tiff.
 - 4: R analysis scripts and outputs. All R scripts and R Markdown notebooks will be managed with Git version control. Each script will have a header comment block documenting: purpose of the script, inputs required (file paths), outputs generated, dependencies (R packages with versions), and author and date. The Git commit history will track every change with messages explaining why changes were made. The repository will be hosted on GitHub under my lab's organization. R Markdown notebooks interleave code, results, and explanatory text, serving as executable documentation of the entire analysis workflow from raw data to figures.
+
+## Example of metadata file
+Here are exmaples online: 1. https://dbkgroup.org/memo/implementation/xml.html 2. https://dbkgroup.org/memo/downloads/implementation/xml/masslynx.xsd 3. https://dbkgroup.org/memo/downloads/implementation/xml/analysis.xsd 4. Othere examples inclued those in the human metabolome database: https://hmdb.ca/downloads. I have created a simple, revised, simple example uploaded to the main repository as example_imzML_header.txt
+
+
+## MALDI-MSI RUN METADATA
+
+1. Run ID:
+[number between 1 and 200. Precede with zeros to 3 digits, e.g., 001]
+
+2. Sample information:
+   Sample ID: [e.g., Dros_KO1_Inf_24h]
+   Genotype: [Control / Knockdown / Overexpression]
+   Gene targeted: [name of gene, if applicable]
+   Infection status: [Uninfected / Wasp-infected]
+   Wasp species: [if infected, e.g., Leptopilina boulardi]
+   Time point post-infection: [hours, e.g., 0, 6, 12, 24, 48]
+   Biological replicate number: [1, 2, 3, etc.]
+   Tissue type: [Fat body / Gut / Whole abdomen]
+
+3. Sample preparation:
+   Matrix used: [e.g., DHB, CHCA, DAN]
+   Matrix concentration: [mg/mL]
+   Tissue thickness: [micrometers]
+   Washing protocol: [Yes / No. If yes, describe in protocol document]
+
+4. Instrument settings:
+   Instrument model: [Bruker timsTOF Flex]
+   Laser wavelength: [nm]
+   Laser power: [percentage or arbitrary units]
+   Laser shots per pixel: [number]
+   Spatial resolution (pixel size): [micrometers]
+   Mass range (m/z): [e.g., 300-1300]
+   Polarity: [Positive / Negative]
+   Acquisition date: [YYYY-MM-DD]
+
+5. File information:
+   Raw file path: [path on mass spec center cloud]
+   Processed file name: [YYYYMMDD_genotype_infection_tissue_replicate.imzML]
+   File size: [GB]
+
+6. Related materials:
+   Protocol document: [path + filename]
+   Lab notebook entry: [date and page number]
+
+This template demonstrates how I will document the experimental context that is not captured by the imzML standard alone. The imzML format records instrument settings and spectral data (m/z, intensity arrays), but it does not have fields for Drosophila genotype, infection status, wasp species, or time point post-infection. This custom template ensures that all information needed to interpret and reuse my data is recorded in a consistent, readable plain-text format. The template uses bracketed placeholders [ ] to guide what information belongs in each field, similar to the interview documentation example provided in class. This approach balances the use of an existing standard (imzML for spectral data) with custom metadata for my specific biological model, making my data both FAIR and usable by other Drosophila researchers.
+
+
