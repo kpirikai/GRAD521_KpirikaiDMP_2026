@@ -1,4 +1,4 @@
-<img width="468" height="639" alt="image" src="https://github.com/user-attachments/assets/7e646159-348f-462d-9902-eb1f3500236b" />## Data description
+## Data description
 1. MALDI-MSI lipidomics data (experimental, instrument generated): Each pixel in the resulting image contains a full mass spectrum with the coordinate of where the laser hit; with that information I am able to map exactly where each lipid species is located within the tissue
 2. Infection assays(experimental observational): Excel/CSV containing time-to-event data, mostly just counts
 3. Fluorescence spectrometry and microscopy data (experimental, instrument generated: Numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
