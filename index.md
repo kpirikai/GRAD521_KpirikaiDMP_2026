@@ -1,8 +1,8 @@
 ## Data description
 1. MALDI-MSI lipidomics data (experimental, instrument generated): Each pixel in the resulting image contains a full mass spectrum with the coordinate of where the laser hit; with that information I am able to map exactly where each lipid species is located within the tissue
-3. Infection assays(experimental observational): Excel/CSV containing time-to-event data, mostly just counts
-4. Fluorescence spectrometry and microscopy data (experimental, instrument generated: Numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
-5. R analysis scripts and outputs (derived, codes and outputs): R Markdown notebooks, including figures (PDF, PNG), summary tables (CSV), and model outputs. 
+2. Infection assays(experimental observational): Excel/CSV containing time-to-event data, mostly just counts
+3. Fluorescence spectrometry and microscopy data (experimental, instrument generated: Numerical intensity values (exported to Excel/CSV) and image files (TIFF, CZI formats).
+4. R analysis scripts and outputs (derived, codes and outputs): R Markdown notebooks, including figures (PDF, PNG), summary tables (CSV), and model outputs. 
 
 ## Roles and responsibilities
 Role	Persons	Duties
@@ -34,4 +34,15 @@ Mass spec center uses cloud: I have remote access credentials. The facility mana
 
 ## Archiving and preservation 
 Before graduating, I will transfer all data from my personal OSU network drive folder to the PI's lab folder. I will also deposit final datasets in ScholarsArchive@OSU with appropriate metadata and a DOI. My GitHub repositories will be transferred to a lab/PI account. Resulting publications out of the work prior to graduation will have raw data deposition requirements met as per the journal requirements.
+
+## Data documentation plan
+No formal metadata standard fully fits all my data types. MSI data can use imzML (an open XML-based standard), but my infection assays, fluorescence images, and R scripts do not align with a single standard. This is my plan to document each dataset:
+- 1: MSI lipidomics. Processed data will be converted to imzML format, which embeds metadata (pixel coordinates, m/z values, intensity arrays) in an XML header. I will supplement this with a CSV metadata file for each run that includes: sample ID, genotype (control vs gene mutated), infection status (wasps vs no wasps), time point post-infection, biological replicate number, tissue type (fat body, gut, whole abdomen), MALDI matrix used, instrument settings (laser power, pixel size, mass range), and acquisition date. File naming: YYYYMMDD_genotype_infection_tissue_replicate.imzML 
+(e.g., 20260426_w1118_Gh_infected_fatbody_rep01.imzML).
+- 2: Infection assay data. I will document these with a README.txt file in the same folder containing a data dictionary that describes each column: variable name, description, units where applicable (e.g., hours_post_infection, immune_cell_counts). The README will also include general information: fly lines used, wasp species, temperature, humidity, and a link to the full methods protocol. 
+File naming: YYYYMMDD_assay_type_genotype_rep01.csv.
+- 3: Fluorescence spectrometry and microscopy data. Numerical intensity values will be exported to CSV and documented in the same README as Dataset 2. High-resolution images (TIFF, CZI) will be documented with a separate metadata CSV recording: image ID, sample ID, fluorophore (e.g., GFP, DAPI), exposure time, microscope settings, and a brief description of what the image shows. 
+File naming: YYYYMMDD_sample_fluorophore_rep01.tiff.
+- 4: R analysis scripts and outputs. All R scripts and R Markdown notebooks will be managed with Git version control. Each script will have a header comment block documenting: purpose of the script, inputs required (file paths), outputs generated, dependencies (R packages with versions), and author and date. The Git commit history will track every change with messages explaining why changes were made. The repository will be hosted on GitHub under my lab's organization. R Markdown notebooks interleave code, results, and explanatory text, serving as executable documentation of the entire analysis workflow from raw data to figures
+
 
