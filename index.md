@@ -70,23 +70,23 @@ Here are exmaples online: 1. https://dbkgroup.org/memo/implementation/xml.html 2
    - Washing protocol: [Yes / No. If yes, describe in protocol document]
 
 4. Instrument settings:
-  - Instrument model: [Bruker timsTOF Flex]
-  - Laser wavelength: [nm]
-  - Laser power: [percentage or arbitrary units]
-  - Laser shots per pixel: [number]
-  - Spatial resolution (pixel size): [micrometers]
-  - Mass range (m/z): [e.g., 300-1300]
-  - Polarity: [Positive / Negative]
-  - Acquisition date: [YYYY-MM-DD]
+   - Instrument model: [Bruker timsTOF Flex]
+   - Laser wavelength: [nm]
+   - Laser power: [percentage or arbitrary units]
+   - Laser shots per pixel: [number]
+   - Spatial resolution (pixel size): [micrometers]
+   - Mass range (m/z): [e.g., 300-1300]
+   - Polarity: [Positive / Negative]
+   - Acquisition date: [YYYY-MM-DD]
 
 5. File information:
-  - Raw file path: [path on mass spec center cloud]
-  - Processed file name: [YYYYMMDD_genotype_infection_tissue_replicate.imzML]
-  - File size: [GB]
+   - Raw file path: [path on mass spec center cloud]
+   - Processed file name: [YYYYMMDD_genotype_infection_tissue_replicate.imzML]
+   - File size: [GB]
 
 6. Related materials:
-  - Protocol document: [path + filename]
-  - Lab notebook entry: [date and page number]
+   - Protocol document: [path + filename]
+   - Lab notebook entry: [date and page number]
 
 This template demonstrates how I will document the experimental context that is not captured by the imzML standard alone. The imzML format records instrument settings and spectral data (m/z, intensity arrays), but it does not have fields for Drosophila genotype, infection status, wasp species, or time point post-infection. This custom template ensures that all information needed to interpret and reuse my data is recorded in a consistent, readable plain-text format. The template uses bracketed placeholders [ ] to guide what information belongs in each field, similar to the interview documentation example provided in class. This approach balances the use of an existing standard (imzML for spectral data) with custom metadata for my specific biological model, making my data both FAIR and usable by other Drosophila researchers.
 
