@@ -50,18 +50,18 @@ Here are exmaples online: 1. https://dbkgroup.org/memo/implementation/xml.html 2
 
 ## Example XML
 <?xml version="1.0" encoding="UTF-8"?>
-<mzML xmlns="http://psi.hupo.org/ms/mzml"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://psi.hupo.org/ms/mzml http://psidev.info/ms/mzml/xsd/mzML1.1.0.xsd"
+<mzML xmlns="...."
+      xmlns:xsi="....."
+      xsi:schemaLocation="..."
       version="1.1.0"
       accession="[unique_accession_number]">
 
   <!-- Controlled vocabularies -->
   <cvList count="2">
-    <cv id="MS" fullName="Proteomics Standards Initiative Mass Spectrometry Ontology"
-         URI="http://psidev.info/ms/mzml/psi-ms.obo" version="4.1.0"/>
+    <cv id="MS" fullName="Lipidomics Mass Spectrometry Ontology"
+         URI="..." version="4.1.0"/>
     <cv id="UO" fullName="Unit Ontology"
-         URI="http://purl.obolibrary.org/obo/uo.owl" version="1.42"/>
+         URI="..." version="1.42"/>
   </cvList>
 
   <!-- File description and source -->
